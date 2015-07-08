@@ -52,8 +52,8 @@ apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository url: "file:///Users/naoki/Documents/Sandpit/AndroidStudio/maven/SampleLibrary/repository" // デプロイ先
-            pom.version = '0.0.1' // ライブラリバージョン
+            repository url: "file:${deployTo.absolutePath}" //"file:///Users/naoki/Documents/Sandpit/AndroidStudio/maven/SampleLibrary/repository" // デプロイ先
+            pom.version = '0.0.2' // ライブラリバージョン
             pom.groupId = 'com.meleap' // グループ名
             pom.artifactId = 'samplelibrarylib' // アーティファクト名
         }

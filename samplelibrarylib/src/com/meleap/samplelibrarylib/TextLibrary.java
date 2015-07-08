@@ -7,7 +7,7 @@ public class TextLibrary {
     private String message;
 
     public TextLibrary(String msg) {
-        message = msg + "!!";
+        message = msg + "\nversion 0.0.2!!";
     }
 
     public String getMessage() {
